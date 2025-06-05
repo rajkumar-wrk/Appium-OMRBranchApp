@@ -1,5 +1,6 @@
 package com.omr_branch;
 
+import java.io.File;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -44,7 +45,7 @@ public class OmrAppAutomation {
 		capabilities.setCapability("appium:automationName", "UIAutomator2");
 
 		capabilities.setCapability("appium:chromedriverExecutable",
-				"C:\\Users\\raj81\\.appium\\node_modules\\appium-uiautomator2-driver\\node_modules\\appium-chromedriver\\chromedriver\\chromedriver-win64_v137.0.7151.68.exe");
+				System.getProperty("user.dir")+"\\chromeDriver\\chromedriver-win64_v137.0.7151.68.exe");
 
 		driver = new AndroidDriver(capabilities);
 
@@ -83,7 +84,7 @@ public class OmrAppAutomation {
 
 	}
 
-	public static void searchHotels() {
+	public static void searchHotels() throws InterruptedException {
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Select State']")).click();
 
 		Rectangle ddnRectState = driver
@@ -96,37 +97,35 @@ public class OmrAppAutomation {
 
 		int startY = (int) (ddnRectState.getHeight() * 0.80 + y);
 		int EndY = (int) (ddnRectState.getHeight() * 0.20 + y);
-		
+
 		swipes(startY, EndY, centerX);
 
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Tamil Nadu']")).click();
 
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Select City']")).click();
-		
-		
+
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Chennai']")).click();
-		
-		
 
 		driver.findElement(By.xpath("//android.widget.TextView[@text='Select Room Type']")).click();
-		
-		Rectangle ddnRectRoomType = driver.findElement(By.xpath("//android.widget.ScrollView[@content-desc='search_room_type flatlist']")).getRect();
-		
-		int centerXRoom = (ddnRectRoomType.getWidth()) / 2 + ddnRectRoomType.getX() ;
+
+		Rectangle ddnRectRoomType = driver
+				.findElement(By.xpath("//android.widget.ScrollView[@content-desc='search_room_type flatlist']"))
+				.getRect();
+
+		int centerXRoom = (ddnRectRoomType.getWidth()) / 2 + ddnRectRoomType.getX();
 
 		int startYRoom = (int) (ddnRectRoomType.getHeight() * 0.80 + ddnRectRoomType.getY());
 		int EndYRoom = (int) (ddnRectRoomType.getHeight() * 0.20 + ddnRectRoomType.getY());
-		
+
 		swipes(startYRoom, EndYRoom, centerXRoom);
-		
-		
-		driver.findElement(By.xpath("//android.widget.TextView[@text='Studio']")).click();
+
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("//android.widget.TextView[@text='Luxury']")).click();
 
 		WebElement ddnCheckInDate = driver
 				.findElement(By.xpath("//android.widget.EditText[@resource-id='search_select_checkin']"));
 		ddnCheckInDate.click();
-		
-		
+
 //		Rectangle dateRect = driver.findElement(By.xpath("//android.widget.DatePicker[@resource-id='android:id/datePicker']/android.widget.LinearLayout")).getRect();
 //
 //		
@@ -139,16 +138,17 @@ public class OmrAppAutomation {
 //		swipes(startX, endX, centerY);
 //		
 //		driver.findElement(By.xpath("//android.view.View[@content-desc='16 July 2025']")).click();
-		
+
 		driver.findElement(By.xpath("//android.widget.Button[@resource-id='android:id/button1']")).click();
 
 		WebElement ddnCheckOutDate = driver
 				.findElement(By.xpath("//android.widget.EditText[@resource-id='search_select_checkout']"));
 		ddnCheckOutDate.click();
-		
-		//swipes(startX, endX, centerY);
-		
-	//	driver.findElement(By.xpath("//android.view.View[@content-desc='30 July 2025']")).click();
+
+		// swipes(startX, endX, centerY);
+
+		// driver.findElement(By.xpath("//android.view.View[@content-desc='30 July
+		// 2025']")).click();
 
 		driver.findElement(By.xpath("//android.widget.Button[@resource-id='android:id/button1']")).click();
 
@@ -212,7 +212,7 @@ public class OmrAppAutomation {
 
 	public static void swipeToElement(By by) {
 
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		List<WebElement> elements = driver.findElements(by);
 
 		while (elements.size() == 0) {
@@ -226,7 +226,7 @@ public class OmrAppAutomation {
 	public static void selectHotelName(By by) {
 
 		String hotelName = driver.findElement(by).getText();
-		if (hotelName.equals("Hyatt Centric Luxury")) {
+		if (hotelName.equals("Taj Connemara Luxury")) {
 
 			driver.findElement(By.xpath("//android.widget.TextView[@text='Continue']")).click();
 
@@ -358,7 +358,7 @@ public class OmrAppAutomation {
 
 		printSelectHotelText();
 
-		By xpath = By.xpath("//*[@text='Hyatt Centric Luxury']");
+		By xpath = By.xpath("//*[@text='Taj Connemara Luxury']");
 		swipeToElement(xpath);
 
 		selectHotelName(xpath);
