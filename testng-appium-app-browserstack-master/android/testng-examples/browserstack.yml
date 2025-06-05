@@ -1,0 +1,17 @@
+userName: rajkumar_3U5QXq
+accessKey: 4e3zcKg34Pr9yK9mn1Sa
+framework: testng
+app: bs://sample.app
+platforms:
+  - platformName: android
+    deviceName: Samsung Galaxy S23 Ultra
+    platformVersion: 13.0
+  - platformName: android
+    deviceName: Google Pixel 9 Pro
+    platformVersion: 15.0
+  - platformName: android
+    deviceName: OnePlus 12R
+    platformVersion: 14.0
+browserstackLocal: true
+buildName: browserstack-build-1
+projectName: BrowserStack Sample

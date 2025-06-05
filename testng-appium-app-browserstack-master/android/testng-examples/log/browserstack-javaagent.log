@@ -1,0 +1,933 @@
+00:17:47.985 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+00:17:47.986 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+00:17:48.273 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\class\\maven\\MobileTesting\\testng-appium-app-browserstack-master\\android\\testng-examples, style.color=always, user.dir=E\:\\class\\maven\\MobileTesting\\testng-appium-app-browserstack-master\\android\\testng-examples, localrepository=C\:\\Users\\raj81\\.m2\\repository}
+00:17:48.274 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:17:48.355 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:17:48.736 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://sample.app]
+00:17:48.736 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+00:17:48.747 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 85b91a2f-4e8a-4d95-90ee-59a7c4236379
+00:17:48.747 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:17:48.770 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\raj81\.browserstack already exist
+00:17:48.772 [main] DEBUG com.browserstack.v2.SdkCliUtils - getExistingCliPath: no binary found
+00:17:48.773 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: 
+00:17:49.434 [main] DEBUG com.browserstack.v2.SdkCliUtils - Need to update binary, current binary version: 0
+00:17:49.435 [main] DEBUG com.browserstack.v2.SdkCliUtils - Downloading SDK binary from: https://sdk-assets.browserstack.com/binary-win-x64-1.3.9.zip
+00:17:52.842 [main] DEBUG com.browserstack.v2.SdkCliUtils - Files successfully extracted to: C:\Users\raj81\.browserstack\cli
+00:17:52.849 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\raj81\.browserstack\cli\binary-win-x64.exe
+00:17:52.862 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+00:17:52.864 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\raj81\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+00:17:54.933 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=174c45f6-9960-4aaa-a552-b3f4d396bb34 listenAddress=127.0.0.1:5400
+00:17:54.934 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process started
+00:17:54.934 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process connecting {port=5400, listen=127.0.0.1:5400, id=174c45f6-9960-4aaa-a552-b3f4d396bb34}
+00:17:54.936 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:17:54.955 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\raj81\.browserstack already exist
+00:18:05.568 [main] DEBUG com.browserstack.v2.SdkCLI - start-bin-session=bin_session_id: "174c45f6-9960-4aaa-a552-b3f4d396bb34"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":12},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 7 Pro\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 9\",\"platformVersion\":11}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#1\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2417_Raju_5jih\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6Im12amI2empteXV3ZWdncnNndDlyZmFqcW8zamd6b2tmZTB0eGF0aGwiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDQ0NzUsImV4cCI6MTc0ODg5MDA3NX0.GflBCZRYXrWo9tudks491_Ak1YrO5c0i1smgxd5AnWE"
+  build_hashed_id: "mvjb6zjmyuweggrsgt9rfajqo3jgzokfe0txathl"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+session_framework: "selenium"
+
+00:18:05.613 [main] DEBUG com.browserstack.v2.SdkCLI - startChild: child-process connecting
+00:18:05.937 [main] DEBUG com.browserstack.v2.SdkCLI - connect-bin-session=bin_session_id: "174c45f6-9960-4aaa-a552-b3f4d396bb34"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":12},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 7 Pro\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 9\",\"platformVersion\":11}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#1\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2417_Raju_5jih\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\"}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6Im12amI2empteXV3ZWdncnNndDlyZmFqcW8zamd6b2tmZTB0eGF0aGwiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDQ0NzUsImV4cCI6MTc0ODg5MDA3NX0.GflBCZRYXrWo9tudks491_Ak1YrO5c0i1smgxd5AnWE"
+  build_hashed_id: "mvjb6zjmyuweggrsgt9rfajqo3jgzokfe0txathl"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+}
+session_framework: "selenium"
+
+00:18:05.950 [main] INFO  com.browserstack.v2.SdkCLI - loadBinResponse: Loading modules as per LoadBinResponse=bin_session_id: "174c45f6-9960-4aaa-a552-b3f4d396bb34"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":12},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 7 Pro\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 9\",\"platformVersion\":11}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#1\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2417_Raju_5jih\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\"}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6Im12amI2empteXV3ZWdncnNndDlyZmFqcW8zamd6b2tmZTB0eGF0aGwiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDQ0NzUsImV4cCI6MTc0ODg5MDA3NX0.GflBCZRYXrWo9tudks491_Ak1YrO5c0i1smgxd5AnWE"
+  build_hashed_id: "mvjb6zjmyuweggrsgt9rfajqo3jgzokfe0txathl"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+}
+session_framework: "selenium"
+
+00:18:05.972 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=WebdriverModule & 174c45f6-9960-4aaa-a552-b3f4d396bb34
+00:18:05.973 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=ObservabilityModule & 174c45f6-9960-4aaa-a552-b3f4d396bb34
+00:18:05.973 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=TestHubModule & 174c45f6-9960-4aaa-a552-b3f4d396bb34
+00:18:05.978 [main] INFO  com.browserstack.v2.SdkCLI - startChild: child-process connected
+00:18:05.980 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+00:18:08.351 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:18:08.378 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+00:18:08.966 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up testng framework
+00:18:08.968 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up selenium framework
+00:18:09.520 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.521 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.528 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.528 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.528 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.530 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.530 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.531 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.531 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.531 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.538 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.538 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.538 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.538 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.538 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.554 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.554 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.555 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.555 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.555 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.556 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.556 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.556 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.556 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.556 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.557 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.557 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.557 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.557 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.557 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.565 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.565 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.566 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.566 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.566 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.568 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.568 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.569 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.569 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.569 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.570 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.570 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.570 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.570 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.570 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:09.595 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492488981 target=FirstTest-0@0 instances=[1492488981, 1492489943, 1492490905]
+00:18:09.595 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492489943 target=FirstTest-1@1 instances=[1492488981, 1492489943, 1492490905]
+00:18:09.595 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492490905 target=FirstTest-2@2 instances=[1492488981, 1492489943, 1492490905]
+00:18:09.595 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492488981
+00:18:09.595 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492489943
+00:18:09.597 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492490905
+00:18:09.597 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492488981
+00:18:09.597 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492489943
+00:18:09.597 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492490905
+00:18:09.650 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492490905
+00:18:09.650 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492488981
+00:18:09.650 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492489943
+00:18:09.652 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492490905
+00:18:09.652 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492489943
+00:18:09.652 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492488981
+00:18:09.652 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:09.652 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:09.653 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:09.718 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}]
+00:18:09.718 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}]
+00:18:09.718 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}]
+00:18:09.722 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=0a45ee8d-5547-45f5-88ca-9123e14510d1, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@46a953cf]]
+00:18:09.722 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=c9ebedcf-e089-400a-bbc0-2f1b276e90d5, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@41522537]]
+00:18:09.722 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=5763ef0b-26a9-4ecb-a935-c61a8adf86c0, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@43b40233]]
+00:18:09.722 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=c9ebedcf-e089-400a-bbc0-2f1b276e90d5, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:18:09.722 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=0a45ee8d-5547-45f5-88ca-9123e14510d1, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:18:09.722 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=5763ef0b-26a9-4ecb-a935-c61a8adf86c0, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:18:09.766 [FirstTest-2@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@aed3a75, response=success: true
+
+00:18:09.766 [FirstTest-0@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@603de269, response=success: true
+
+00:18:09.768 [FirstTest-1@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@50db9e68, response=success: true
+
+00:18:10.308 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG hookState=HookState.PRE instance=1492489943
+00:18:10.308 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load log entries
+00:18:10.345 [setUp@1] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@748b689d, response=success: true
+
+00:18:10.346 [setUp@1] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@748b689d
+00:18:11.250 [setUp@1] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=770655524 target=15224:60 instances=[770655502, 770655525, 770655524]
+00:18:11.250 [setUp@2] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=770655525 target=15224:61 instances=[770655502, 770655525, 770655524]
+00:18:11.250 [setUp@0] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=770655502 target=15224:59 instances=[770655502, 770655525, 770655524]
+00:18:11.263 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@77420170
+00:18:11.263 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@4c757936
+00:18:11.263 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@77191e93
+00:18:11.367 [setUp@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@597d8242
+00:18:11.367 [setUp@1] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@bd70d38
+00:18:11.367 [setUp@2] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@467aa989
+00:18:13.196 [setUp@2] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@383489df
+00:18:13.196 [setUp@1] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@6083ab88
+00:18:13.198 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@fe68808
+00:18:13.200 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@32f28a40
+00:18:13.202 [setUp@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@428bae73
+00:18:13.206 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@3810d76
+00:18:13.220 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492490905
+00:18:13.220 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492489943
+00:18:13.220 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492489943
+00:18:13.220 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492490905
+00:18:13.220 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:13.220 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:13.220 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492488981
+00:18:13.222 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492488981
+00:18:13.224 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:13.242 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}]
+00:18:13.242 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}]
+00:18:13.242 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=5763ef0b-26a9-4ecb-a935-c61a8adf86c0, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@43b40233]]
+00:18:13.242 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=c9ebedcf-e089-400a-bbc0-2f1b276e90d5, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@41522537]]
+00:18:13.252 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel
+00:18:13.252 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:18:13.252 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel\BuildLevelHookEvent 
+00:18:13.252 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel
+00:18:13.254 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:18:13.254 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}]
+00:18:13.254 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel\BuildLevelHookEvent 
+00:18:13.254 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel\BuildLevelHookEvent
+00:18:13.254 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=0a45ee8d-5547-45f5-88ca-9123e14510d1, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@46a953cf]]
+00:18:13.254 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:18:13.254 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:18:13.254 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel\BuildLevelHookEvent
+00:18:13.254 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel
+00:18:13.257 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=5763ef0b-26a9-4ecb-a935-c61a8adf86c0, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.242634300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:18:13.257 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:18:13.257 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:18:13.257 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:18:13.259 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=c9ebedcf-e089-400a-bbc0-2f1b276e90d5, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.250422600, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:18:13.259 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent 
+00:18:13.259 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent
+00:18:13.259 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:18:13.259 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:18:13.263 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=0a45ee8d-5547-45f5-88ca-9123e14510d1, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.254439300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:18:13.276 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@25b1b789, response=success: true
+
+00:18:13.276 [setUp@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@237752d1, response=success: true
+
+00:18:13.276 [setUp@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5512f046, response=success: true
+
+00:18:13.292 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492488981
+00:18:13.294 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492489943
+00:18:13.294 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492490905
+00:18:13.314 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492490905
+00:18:13.314 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@1d23a97f
+00:18:13.316 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492489943
+00:18:13.316 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@7dc59e77
+00:18:13.320 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492488981
+00:18:13.320 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@a37a190
+00:18:13.333 [setUp@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@7dc59e77, response=success: true
+
+00:18:13.333 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@1d23a97f, response=success: true
+
+00:18:13.333 [setUp@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@a37a190, response=success: true
+
+00:18:13.333 [setUp@1] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@66d9dd37, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@66d9dd37, hookState=HookState.PRE}
+00:18:13.333 [setUp@2] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@440d9e89, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@440d9e89, hookState=HookState.PRE}
+00:18:13.333 [setUp@0] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@5f2ccc80, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@5f2ccc80, hookState=HookState.PRE}
+00:18:13.333 [setUp@2] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:18:13.333 [setUp@1] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:18:13.333 [setUp@0] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:18:13.333 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492488981
+00:18:13.333 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492489943
+00:18:13.333 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492490905
+00:18:13.333 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492488981
+00:18:13.333 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492490905
+00:18:13.333 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492489943
+00:18:13.333 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:18:13.333 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:18:13.333 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:18:13.340 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492489943
+00:18:13.340 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492490905
+00:18:13.340 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492488981
+00:18:13.340 [test@0] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@6469b768
+00:18:13.340 [test@2] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@4f63f2dd
+00:18:13.340 [test@1] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@16ca2823
+00:18:13.632 [test@1] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:18:13.646 [test@0] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:18:13.944 [test@0] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@6469b768}
+00:18:14.025 [test@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@6469b768, response=success: true
+
+00:18:14.027 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492488981
+00:18:14.027 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:14.052 [test@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}]
+00:18:14.052 [test@0] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.052161600, hook_id=d35725e2-c384-4461-8805-fcb4adc1ae18, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@46a953cf]]
+00:18:14.053 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.052161600, hook_id=d35725e2-c384-4461-8805-fcb4adc1ae18, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=0a45ee8d-5547-45f5-88ca-9123e14510d1, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.254439300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:18:14.063 [test@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@515bb2cd, response=success: true
+
+00:18:14.069 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492488981
+00:18:14.069 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:14.091 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}]
+00:18:14.091 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.052161600, hook_id=d35725e2-c384-4461-8805-fcb4adc1ae18, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@46a953cf] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@46a953cf]]
+00:18:14.093 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel
+00:18:14.093 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:18:14.093 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent 
+00:18:14.095 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent
+00:18:14.095 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:18:14.095 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:18:14.097 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=0a45ee8d-5547-45f5-88ca-9123e14510d1, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.254439300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.052161600, hook_id=d35725e2-c384-4461-8805-fcb4adc1ae18, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:14.091310900, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:18:14.110 [tearDown@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@505f5b8c, response=success: true
+
+00:18:14.271 [test@2] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:18:14.572 [test@2] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@4f63f2dd}
+00:18:14.585 [test@1] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@16ca2823}
+00:18:14.589 [test@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@4f63f2dd, response=success: true
+
+00:18:14.592 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492490905
+00:18:14.592 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:14.604 [test@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@16ca2823, response=success: true
+
+00:18:14.606 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492489943
+00:18:14.607 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:14.618 [test@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}]
+00:18:14.619 [test@2] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.619071800, hook_id=a11867f8-0317-4fe5-8f81-bd31f2d4cfcc, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@43b40233]]
+00:18:14.620 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.619071800, hook_id=a11867f8-0317-4fe5-8f81-bd31f2d4cfcc, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=5763ef0b-26a9-4ecb-a935-c61a8adf86c0, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.242634300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:18:14.627 [test@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}]
+00:18:14.628 [test@1] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.628693100, hook_id=679ddb11-4e9a-4ab3-925b-0da1cdaca2f9, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@41522537]]
+00:18:14.628 [test@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@1afdc611, response=success: true
+
+00:18:14.628 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.628693100, hook_id=679ddb11-4e9a-4ab3-925b-0da1cdaca2f9, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=c9ebedcf-e089-400a-bbc0-2f1b276e90d5, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.250422600, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:18:14.630 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492490905
+00:18:14.630 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:14.639 [test@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@2566f89a, response=success: true
+
+00:18:14.641 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492489943
+00:18:14.642 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:18:14.652 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}]
+00:18:14.652 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.619071800, hook_id=a11867f8-0317-4fe5-8f81-bd31f2d4cfcc, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@43b40233] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@43b40233]]
+00:18:14.652 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel
+00:18:14.652 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:18:14.653 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel\BuildLevelHookEvent 
+00:18:14.653 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-61\HookLevel\BuildLevelHookEvent
+00:18:14.654 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:18:14.654 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:18:14.654 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=5763ef0b-26a9-4ecb-a935-c61a8adf86c0, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.242634300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.619071800, hook_id=a11867f8-0317-4fe5-8f81-bd31f2d4cfcc, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:14.652336600, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:18:14.660 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}]
+00:18:14.660 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.628693100, hook_id=679ddb11-4e9a-4ab3-925b-0da1cdaca2f9, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@41522537] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@41522537]]
+00:18:14.661 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel
+00:18:14.661 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:18:14.664 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel\BuildLevelHookEvent 
+00:18:14.665 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-60\HookLevel\BuildLevelHookEvent
+00:18:14.671 [tearDown@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@3519d1c6, response=success: true
+
+00:18:14.672 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:18:14.672 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:18:14.673 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:09.721848200, hook_id=c9ebedcf-e089-400a-bbc0-2f1b276e90d5, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:13.250422600, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:18:14.628693100, hook_id=679ddb11-4e9a-4ab3-925b-0da1cdaca2f9, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:18:14.660441, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:18:14.680 [tearDown@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@94a2dea, response=success: true
+
+00:18:15.266 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.268 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.268 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.268 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.268 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.276 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.276 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.276 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.276 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.276 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.280 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.280 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.280 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.280 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.280 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:18:15.391 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+00:18:15.393 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+00:18:22.042 [Thread-0] DEBUG com.browserstack.v2.SdkCLI - stop-bin-session=success: true
+
+00:18:22.060 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+00:18:22.374 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:18:22.374 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:18:23.916 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - Visit https://observability.browserstack.com/builds/mvjb6zjmyuweggrsgt9rfajqo3jgzokfe0txathl to view build report, insights, and many more debugging information all at one place!
+00:18:23.916 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:18:23.916 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: 
+00:18:23.916 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:18:23.918 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 85b91a2f-4e8a-4d95-90ee-59a7c4236379, testhub id: mvjb6zjmyuweggrsgt9rfajqo3jgzokfe0txathl
+00:18:23.918 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:19:13.001 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+00:19:13.002 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+00:19:13.304 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\class\\maven\\MobileTesting\\testng-appium-app-browserstack-master\\android\\testng-examples, style.color=always, user.dir=E\:\\class\\maven\\MobileTesting\\testng-appium-app-browserstack-master\\android\\testng-examples, localrepository=C\:\\Users\\raj81\\.m2\\repository}
+00:19:13.305 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:19:13.385 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:19:13.791 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://sample.app]
+00:19:13.791 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+00:19:13.796 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: 7b146e39-6273-4f54-a4b6-6263ce7b0c23
+00:19:13.796 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:19:13.821 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\raj81\.browserstack already exist
+00:19:13.827 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\raj81\.browserstack\cli\binary-win-x64.exe
+00:19:15.084 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\raj81\.browserstack\cli\binary-win-x64.exe
+00:19:15.097 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+00:19:15.098 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\raj81\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+00:19:15.891 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=dfdb288b-3440-45b6-94b3-94f0c8e8b0c2 listenAddress=127.0.0.1:5400
+00:19:15.891 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process started
+00:19:15.891 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process connecting {port=5400, listen=127.0.0.1:5400, id=dfdb288b-3440-45b6-94b3-94f0c8e8b0c2}
+00:19:15.893 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:19:15.910 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\raj81\.browserstack already exist
+00:19:22.654 [main] DEBUG com.browserstack.v2.SdkCLI - start-bin-session=bin_session_id: "dfdb288b-3440-45b6-94b3-94f0c8e8b0c2"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":12},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 7 Pro\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 9\",\"platformVersion\":11}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#2\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2419_Raju_p08u\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6InplM2d6NGNyZWVmZ3g0M21yZmhpc3V2bWR6dnpnZDB4OW12ZmN1dnYiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDQ1NTYsImV4cCI6MTc0ODg5MDE1Nn0.n-rcuBP8ZVSZDRWE3HN981FfAWEsMtb8h0disFPOV2I"
+  build_hashed_id: "ze3gz4creefgx43mrfhisuvmdzvzgd0x9mvfcuvv"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+session_framework: "selenium"
+
+00:19:22.678 [main] DEBUG com.browserstack.v2.SdkCLI - startChild: child-process connecting
+00:19:22.972 [main] DEBUG com.browserstack.v2.SdkCLI - connect-bin-session=bin_session_id: "dfdb288b-3440-45b6-94b3-94f0c8e8b0c2"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":12},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 7 Pro\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 9\",\"platformVersion\":11}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#2\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2419_Raju_p08u\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\"}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6InplM2d6NGNyZWVmZ3g0M21yZmhpc3V2bWR6dnpnZDB4OW12ZmN1dnYiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDQ1NTYsImV4cCI6MTc0ODg5MDE1Nn0.n-rcuBP8ZVSZDRWE3HN981FfAWEsMtb8h0disFPOV2I"
+  build_hashed_id: "ze3gz4creefgx43mrfhisuvmdzvzgd0x9mvfcuvv"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+}
+session_framework: "selenium"
+
+00:19:22.978 [main] INFO  com.browserstack.v2.SdkCLI - loadBinResponse: Loading modules as per LoadBinResponse=bin_session_id: "dfdb288b-3440-45b6-94b3-94f0c8e8b0c2"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S22 Ultra\",\"platformVersion\":12},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 7 Pro\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 9\",\"platformVersion\":11}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#2\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2419_Raju_p08u\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\"}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6InplM2d6NGNyZWVmZ3g0M21yZmhpc3V2bWR6dnpnZDB4OW12ZmN1dnYiLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDQ1NTYsImV4cCI6MTc0ODg5MDE1Nn0.n-rcuBP8ZVSZDRWE3HN981FfAWEsMtb8h0disFPOV2I"
+  build_hashed_id: "ze3gz4creefgx43mrfhisuvmdzvzgd0x9mvfcuvv"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+}
+session_framework: "selenium"
+
+00:19:22.996 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=WebdriverModule & dfdb288b-3440-45b6-94b3-94f0c8e8b0c2
+00:19:22.996 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=ObservabilityModule & dfdb288b-3440-45b6-94b3-94f0c8e8b0c2
+00:19:22.996 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=TestHubModule & dfdb288b-3440-45b6-94b3-94f0c8e8b0c2
+00:19:23.001 [main] INFO  com.browserstack.v2.SdkCLI - startChild: child-process connected
+00:19:23.003 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+00:19:25.367 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:19:25.396 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+00:19:26.664 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up testng framework
+00:19:26.669 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up selenium framework
+00:19:27.358 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.358 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.365 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.366 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.366 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.369 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.371 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.371 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.371 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.372 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.378 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.379 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.379 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.379 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.379 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.399 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.399 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.399 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.400 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.400 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.401 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.402 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.402 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.402 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.403 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.405 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.405 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.406 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.406 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.406 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.411 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.412 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.413 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.413 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.413 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.415 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.416 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.417 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.417 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.417 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.418 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.418 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.419 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.419 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.419 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:27.452 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492488981 target=FirstTest-0@0 instances=[1492490905]
+00:19:27.452 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492489943 target=FirstTest-1@1 instances=[1492490905]
+00:19:27.452 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492490905 target=FirstTest-2@2 instances=[1492490905]
+00:19:27.452 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492490905
+00:19:27.452 [TestNG-tests-1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE argsLength=1
+00:19:27.452 [TestNG-tests-2] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE argsLength=1
+00:19:27.452 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492490905
+00:19:27.515 [FirstTest-0@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE argsLength=2
+00:19:27.516 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492490905
+00:19:27.516 [FirstTest-1@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE argsLength=2
+00:19:27.518 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492490905
+00:19:27.518 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:19:27.603 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}]
+00:19:27.605 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:27.604571100, hook_id=b144a3dc-d99a-4b31-bc30-08ee0b176c03, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@38fc5554]]
+00:19:27.605 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:27.604571100, hook_id=b144a3dc-d99a-4b31-bc30-08ee0b176c03, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:19:27.646 [FirstTest-2@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@1ba16c0d, response=success: true
+
+00:19:28.361 [setUp@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.LOG hookState=HookState.PRE argsLength=2
+00:19:29.826 [setUp@2] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-141783246 target=14164:59 instances=[-141783246]
+00:19:29.826 [setUp@0] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-141783248 target=14164:57 instances=[-141783248, -141783246]
+00:19:29.827 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@7c7efb
+00:19:29.827 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@12a90c89
+00:19:29.829 [setUp@1] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-141783247 target=14164:58 instances=[-141783248, -141783247, -141783246]
+00:19:29.829 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@46f2e97
+00:19:30.006 [setUp@1] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7af10fca
+00:19:30.006 [setUp@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@3a256ca3
+00:19:30.008 [setUp@2] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@28465279
+00:19:31.943 [setUp@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@3b253c15
+00:19:31.947 [setUp@1] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@251884bb
+00:19:31.947 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@16d231fb
+00:19:31.949 [setUp@2] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@c31895b
+00:19:31.950 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@184b1022
+00:19:31.953 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@6d4c8bf2
+00:19:31.962 [setUp@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST argsLength=2
+00:19:31.962 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492490905
+00:19:31.962 [setUp@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST argsLength=2
+00:19:31.963 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492490905
+00:19:31.963 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:19:31.978 [setUp@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE argsLength=1
+00:19:31.980 [setUp@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE argsLength=1
+00:19:31.981 [test@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE argsLength=1
+00:19:31.982 [test@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST argsLength=1
+00:19:31.982 [test@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST argsLength=1
+00:19:31.984 [test@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE argsLength=2
+00:19:31.986 [tearDown@0] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST argsLength=2
+00:19:31.986 [test@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE argsLength=1
+00:19:31.992 [test@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST argsLength=1
+00:19:31.993 [test@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST argsLength=1
+00:19:31.995 [test@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE argsLength=2
+00:19:31.996 [tearDown@1] ERROR c.b.v2.framework.TestNgFramework - trackEvent: unable to find instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST argsLength=2
+00:19:31.998 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}]
+00:19:31.998 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:27.604571100, hook_id=b144a3dc-d99a-4b31-bc30-08ee0b176c03, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@38fc5554]]
+00:19:31.999 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel
+00:19:32.000 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:19:32.000 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent 
+00:19:32.001 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent
+00:19:32.002 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:19:32.002 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:19:32.003 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:27.604571100, hook_id=b144a3dc-d99a-4b31-bc30-08ee0b176c03, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:19:31.998659900, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:19:32.019 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@30759c74, response=success: true
+
+00:19:32.024 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492490905
+00:19:32.061 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492490905
+00:19:32.062 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@2c329815
+00:19:32.076 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@2c329815, response=success: true
+
+00:19:32.078 [setUp@2] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@7a4d4b8b, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@7a4d4b8b, hookState=HookState.PRE}
+00:19:32.079 [setUp@2] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:19:32.080 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492490905
+00:19:32.081 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492490905
+00:19:32.081 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:19:32.085 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492490905
+00:19:32.086 [test@2] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@61086afa
+00:19:32.388 [test@2] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:19:33.307 [test@2] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@61086afa}
+00:19:33.424 [test@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@61086afa, response=success: true
+
+00:19:33.427 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492490905
+00:19:33.427 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:19:33.449 [test@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}]
+00:19:33.450 [test@2] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:33.450499600, hook_id=0af72cd5-14f3-43ba-b245-4413c7ac6194, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@38fc5554]]
+00:19:33.450 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:33.450499600, hook_id=0af72cd5-14f3-43ba-b245-4413c7ac6194, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:27.604571100, hook_id=b144a3dc-d99a-4b31-bc30-08ee0b176c03, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:19:31.998659900, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:19:33.464 [test@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@4f44b424, response=success: true
+
+00:19:33.470 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492490905
+00:19:33.470 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:19:33.488 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}]
+00:19:33.488 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:33.450499600, hook_id=0af72cd5-14f3-43ba-b245-4413c7ac6194, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@38fc5554] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@38fc5554]]
+00:19:33.488 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel
+00:19:33.489 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:19:33.489 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent 
+00:19:33.490 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent
+00:19:33.490 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:19:33.490 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:19:33.492 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:27.604571100, hook_id=b144a3dc-d99a-4b31-bc30-08ee0b176c03, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:19:31.998659900, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:19:33.450499600, hook_id=0af72cd5-14f3-43ba-b245-4413c7ac6194, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:19:33.488601300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:19:33.501 [tearDown@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5bda68fe, response=success: true
+
+00:19:33.959 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.960 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.960 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.960 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.960 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.966 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.966 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.966 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.967 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.967 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.968 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.968 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.968 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.968 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:33.968 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:19:34.099 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+00:19:34.104 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+00:19:41.141 [Thread-0] DEBUG com.browserstack.v2.SdkCLI - stop-bin-session=success: true
+
+00:19:41.156 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+00:19:41.472 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:19:41.472 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:19:42.964 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - Visit https://observability.browserstack.com/builds/ze3gz4creefgx43mrfhisuvmdzvzgd0x9mvfcuvv to view build report, insights, and many more debugging information all at one place!
+00:19:42.964 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:19:42.964 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: 
+00:19:42.964 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:19:42.966 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: 7b146e39-6273-4f54-a4b6-6263ce7b0c23, testhub id: ze3gz4creefgx43mrfhisuvmdzvzgd0x9mvfcuvv
+00:19:42.966 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:01.207 [main] INFO  c.browserstack.BrowserStackJavaAgent - Selenium version detected - 4.13.0
+00:31:01.208 [main] INFO  c.browserstack.BrowserStackJavaAgent - Appium version detected - 8.6.0
+00:31:01.501 [main] DEBUG c.b.config.BrowserStackConfig - Cli Config passed - {basedir=E\:\\class\\maven\\MobileTesting\\testng-appium-app-browserstack-master\\android\\testng-examples, style.color=always, user.dir=E\:\\class\\maven\\MobileTesting\\testng-appium-app-browserstack-master\\android\\testng-examples, localrepository=C\:\\Users\\raj81\\.m2\\repository}
+00:31:01.502 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:31:01.599 [main] INFO  c.b.config.BrowserStackConfig - Detected Framework testng
+00:31:02.008 [main] INFO  c.browserstack.BrowserStackJavaAgent - Using app: [-bs://sample.app]
+00:31:02.008 [main] INFO  c.browserstack.BrowserStackJavaAgent - Framework set to testng
+00:31:02.011 [main] INFO  c.browserstack.BrowserStackJavaAgent - SDK run started with id: f5fbb334-d180-4337-aa7d-2a9003c8ee94
+00:31:02.013 [main] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:02.037 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\raj81\.browserstack already exist
+00:31:02.043 [main] DEBUG com.browserstack.v2.SdkCliUtils - Current CLI Path Found: C:\Users\raj81\.browserstack\cli\binary-win-x64.exe
+00:31:04.535 [main] DEBUG com.browserstack.v2.SdkCliUtils - Resolved binary path: C:\Users\raj81\.browserstack\cli\binary-win-x64.exe
+00:31:04.551 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process starting
+00:31:04.551 [main] INFO  com.browserstack.v2.SdkCLI - spawning command='C:\Users\raj81\.browserstack\cli\binary-win-x64.exe' 'sdk' 'tcp'
+00:31:05.302 [ForkJoinPool.commonPool-worker-1] INFO  com.browserstack.v2.SdkCLI - loadCLIParams: start binSessionId=fa8b2b62-b1ea-4e97-b406-83983408e18f listenAddress=127.0.0.1:5400
+00:31:05.303 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process started
+00:31:05.303 [main] DEBUG com.browserstack.v2.SdkCLI - startMain: main-process connecting {port=5400, listen=127.0.0.1:5400, id=fa8b2b62-b1ea-4e97-b406-83983408e18f}
+00:31:05.305 [main] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:31:05.326 [main] DEBUG com.browserstack.v2.SdkCliUtils - File C:\Users\raj81\.browserstack already exist
+00:31:11.992 [main] DEBUG com.browserstack.v2.SdkCLI - start-bin-session=bin_session_id: "fa8b2b62-b1ea-4e97-b406-83983408e18f"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S23 Ultra\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 9 Pro\",\"platformVersion\":15},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 12R\",\"platformVersion\":14}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#3\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2431_Raju_buop\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{}}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6IndyenEwZXlhYWxhaDN0dTNoNnRvdThnbDh5aG4zZWJlc3Z1am9rbXciLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDUyNjUsImV4cCI6MTc0ODg5MDg2NX0.MvQloEKUqQo_4yrNZO2wyiXh_lEgOgdXrYMOo7LmC1M"
+  build_hashed_id: "wrzq0eyaalah3tu3h6tou8gl8yhn3ebesvujokmw"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+session_framework: "selenium"
+
+00:31:12.017 [main] DEBUG com.browserstack.v2.SdkCLI - startChild: child-process connecting
+00:31:12.309 [main] DEBUG com.browserstack.v2.SdkCLI - connect-bin-session=bin_session_id: "fa8b2b62-b1ea-4e97-b406-83983408e18f"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S23 Ultra\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 9 Pro\",\"platformVersion\":15},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 12R\",\"platformVersion\":14}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#3\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2431_Raju_buop\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\"}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6IndyenEwZXlhYWxhaDN0dTNoNnRvdThnbDh5aG4zZWJlc3Z1am9rbXciLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDUyNjUsImV4cCI6MTc0ODg5MDg2NX0.MvQloEKUqQo_4yrNZO2wyiXh_lEgOgdXrYMOo7LmC1M"
+  build_hashed_id: "wrzq0eyaalah3tu3h6tou8gl8yhn3ebesvujokmw"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+}
+session_framework: "selenium"
+
+00:31:12.315 [main] INFO  com.browserstack.v2.SdkCLI - loadBinResponse: Loading modules as per LoadBinResponse=bin_session_id: "fa8b2b62-b1ea-4e97-b406-83983408e18f"
+config: "{\"userName\":\"rajkumar_3U5QXq\",\"accessKey\":\"4e3zcKg34Pr9yK9mn1Sa\",\"framework\":\"testng\",\"app\":\"bs://sample.app\",\"platforms\":[{\"platformName\":\"android\",\"deviceName\":\"Samsung Galaxy S23 Ultra\",\"platformVersion\":13},{\"platformName\":\"android\",\"deviceName\":\"Google Pixel 9 Pro\",\"platformVersion\":15},{\"platformName\":\"android\",\"deviceName\":\"OnePlus 12R\",\"platformVersion\":14}],\"browserstackLocal\":true,\"buildName\":\"browserstack-build-1\",\"projectName\":\"BrowserStack Sample\",\"testObservability\":true,\"accessibility\":false,\"browserstackAutomation\":true,\"selfHeal\":false,\"disableAutoCaptureLogs\":false,\"testhub\":true,\"testContextOptions\":{\"skipSessionStatus\":false,\"skipSessionName\":false},\"buildIdentifier\":\"#3\",\"browserStackLocalOptions\":{\"localIdentifier\":\"May_30_2431_Raju_buop\",\"key\":\"4e3zcKg34Pr9yK9mn1Sa\",\"skipBinaryInitialisation\":false},\"proxySettings\":{},\"hubUrl\":\"https://hub-aps.browserstack.com/wd/hub\"}"
+testhub {
+  jwt: "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJicm93c2Vyc3RhY2tfb2IiLCJzdWIiOiI5NzU2MzU4IiwiZ3JvdXBfaWQiOjk2NjU1MDMsInVzZXJfaWQiOjk3NTYzNTgsImJ1aWxkX2hhc2hlZF9pZCI6IndyenEwZXlhYWxhaDN0dTNoNnRvdThnbDh5aG4zZWJlc3Z1am9rbXciLCJwcm9qZWN0X25hbWUiOiJCcm93c2VyU3RhY2sgU2FtcGxlIiwiaG9va19hc190ZXN0IjoiMSIsImJ1aWxkX25hbWUiOiJicm93c2Vyc3RhY2stYnVpbGQiLCJwcm9kdWN0X21hcCI6IntcIm9ic2VydmFiaWxpdHlcIjp0cnVlLFwiYWNjZXNzaWJpbGl0eUF1dG9FbmFibGVkXCI6dHJ1ZSxcIm5vblNES1wiOmZhbHNlLFwib3JpZ2luRnJvbVByb2R1Y3RNYXBcIjpcIkFwcEF1dG9tYXRlXCIsXCJic3RhY2tBdXRvbWF0aW9uXCI6dHJ1ZSxcImNhZFwiOnRydWUsXCJhcHBfYXV0b21hdGVcIjp0cnVlfSIsImdycl9yZWdpb24iOiIiLCJpc19sb3dfdm9sdW1lIjpmYWxzZSwic2lnbmluZ19rZXlfaGFzaCI6IjM3YzExMzFlNGIyZTc0M2M3NjZlMWQ3MGJmNWYyYjU3ZGM2OWIxOTVkMzAwZTMyYWU4ZDAyMzEyMGE0YTZkOTciLCJpYXQiOjE3NDg1NDUyNjUsImV4cCI6MTc0ODg5MDg2NX0.MvQloEKUqQo_4yrNZO2wyiXh_lEgOgdXrYMOo7LmC1M"
+  build_hashed_id: "wrzq0eyaalah3tu3h6tou8gl8yhn3ebesvujokmw"
+  testhub_events: true
+}
+observability {
+  success: true
+}
+percy {
+}
+session_framework: "selenium"
+
+00:31:12.330 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=WebdriverModule & fa8b2b62-b1ea-4e97-b406-83983408e18f
+00:31:12.330 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=ObservabilityModule & fa8b2b62-b1ea-4e97-b406-83983408e18f
+00:31:12.330 [main] DEBUG com.browserstack.v2.SdkCLI - loadBinResponse: configured module=TestHubModule & fa8b2b62-b1ea-4e97-b406-83983408e18f
+00:31:12.333 [main] INFO  com.browserstack.v2.SdkCLI - startChild: child-process connected
+00:31:12.335 [main] INFO  com.browserstack.v2.SdkCLI - startMain: main-process connected
+00:31:14.626 [main] INFO  c.browserstack.BrowserStackJavaAgent - Project and debug logs are captured by default. To disable, set disableAutoCaptureLogs: true in config.
+00:31:14.639 [main] INFO  com.browserstack.testOps.Listener - onStart: CLI is active
+00:31:15.182 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up testng framework
+00:31:15.185 [main] DEBUG com.browserstack.v2.SdkCLI - Setting up selenium framework
+00:31:15.607 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.608 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.613 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.614 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.614 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.615 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.615 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.615 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.615 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.615 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.621 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.635 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.635 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.635 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.635 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.635 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.636 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.636 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.637 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.637 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.637 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.638 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.638 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.638 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.639 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.639 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.643 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.643 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.643 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.643 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.643 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.644 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.644 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.645 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.645 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.645 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.645 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.645 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.645 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.647 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.647 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:15.668 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492489943 target=FirstTest-1@1 instances=[1492488981, 1492489943]
+00:31:15.669 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492490905 target=FirstTest-2@2 instances=[1492488981, 1492489943, 1492490905]
+00:31:15.668 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackTestNgTest: saved instance contextId=1492488981 target=FirstTest-0@0 instances=[1492488981, 1492489943]
+00:31:15.669 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492489943
+00:31:15.669 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492488981
+00:31:15.669 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492490905
+00:31:15.669 [TestNG-tests-1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492488981
+00:31:15.669 [TestNG-tests-2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492489943
+00:31:15.669 [TestNG-tests-3] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded instance, testFrameworkState=TestFrameworkState.INIT_TEST hookState=HookState.PRE instance=1492490905
+00:31:15.721 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492490905
+00:31:15.721 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492488981
+00:31:15.721 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492489943
+00:31:15.723 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492489943
+00:31:15.723 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492488981
+00:31:15.723 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.PRE instance=1492490905
+00:31:15.723 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:15.723 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:15.723 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:15.778 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}]
+00:31:15.778 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}]
+00:31:15.778 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}]
+00:31:15.781 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=1bed9f7a-3548-4872-9b5c-d8ed5a82d97c, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@acdcf71]]
+00:31:15.781 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=f9045160-dc86-440d-a8c2-a63317001450, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3f049056]]
+00:31:15.781 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = BEFORE_METHOD & hook = {hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=ec7ff335-8232-4c54-9bd1-f7ed7572e30a, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=setUp status=STARTED method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3eabe84a]]
+00:31:15.782 [FirstTest-1@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=ec7ff335-8232-4c54-9bd1-f7ed7572e30a, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:31:15.782 [FirstTest-0@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=1bed9f7a-3548-4872-9b5c-d8ed5a82d97c, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:31:15.782 [FirstTest-2@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=f9045160-dc86-440d-a8c2-a63317001450, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[]}
+00:31:15.813 [FirstTest-1@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@6f376ebc, response=success: true
+
+00:31:15.813 [FirstTest-2@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@7c34fd9, response=success: true
+
+00:31:15.813 [FirstTest-0@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@643c367a, response=success: true
+
+00:31:16.301 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG hookState=HookState.PRE instance=1492490905
+00:31:16.301 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load log entries
+00:31:16.329 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@6439f280, response=success: true
+
+00:31:16.330 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendLogCreatedEvent: event=com.browserstack.v2.eventBus.Event@6439f280
+00:31:17.092 [setUp@2] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-2102131563 target=1868:59 instances=[-2102131564, -2102131563, -2102131565]
+00:31:17.092 [setUp@1] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-2102131564 target=1868:58 instances=[-2102131564, -2102131563, -2102131565]
+00:31:17.092 [setUp@0] INFO  c.b.v2.framework.SeleniumFramework - trackSeleniumTest: saved instance contextId=-2102131565 target=1868:57 instances=[-2102131564, -2102131563, -2102131565]
+00:31:17.092 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@192cad1
+00:31:17.092 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@72056c93
+00:31:17.092 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onBeforeDriverCreate: event=com.browserstack.v2.eventBus.Event@513e9e27
+00:31:17.195 [setUp@2] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7abafe7
+00:31:17.195 [setUp@0] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@7607e274
+00:31:17.195 [setUp@1] INFO  c.b.v2.module.WebdriverModule - beforeCommandExecute: event=com.browserstack.v2.eventBus.Event@469b97c5
+00:31:18.949 [setUp@0] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@3bb8de00
+00:31:18.949 [setUp@2] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@1511d6f5
+00:31:18.949 [setUp@1] INFO  c.b.v2.module.WebdriverModule - afterCommandExecute: event=com.browserstack.v2.eventBus.Event@1a35a5fb
+00:31:18.951 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@73c4283e
+00:31:18.952 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@685cf587
+00:31:18.952 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onDriverQuit: event=com.browserstack.v2.eventBus.Event@5bd30e6c
+00:31:18.962 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492489943
+00:31:18.962 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492488981
+00:31:18.962 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492490905
+00:31:18.962 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492488981
+00:31:18.962 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492489943
+00:31:18.962 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:18.962 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:18.962 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded common test data, testFrameworkState=TestFrameworkState.BEFORE_METHOD hookState=HookState.POST instance=1492490905
+00:31:18.962 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:18.978 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}]
+00:31:18.979 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=1bed9f7a-3548-4872-9b5c-d8ed5a82d97c, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@acdcf71]]
+00:31:18.979 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel
+00:31:18.980 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:31:18.980 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel\BuildLevelHookEvent 
+00:31:18.980 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel\BuildLevelHookEvent
+00:31:18.982 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:31:18.982 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:31:18.982 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=1bed9f7a-3548-4872-9b5c-d8ed5a82d97c, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.979995300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:31:18.982 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}]
+00:31:18.982 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=f9045160-dc86-440d-a8c2-a63317001450, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3f049056]]
+00:31:18.982 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}]
+00:31:18.982 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=setUp, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=ec7ff335-8232-4c54-9bd1-f7ed7572e30a, hook_logs=[], key=BEFORE_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=setUp status=FAILURE method=AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}], AppiumTest.setUp()[pri:0, instance:com.browserstack.FirstTest@3eabe84a]]
+00:31:18.983 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel
+00:31:18.983 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel
+00:31:18.983 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:31:18.983 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:31:18.983 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent 
+00:31:18.983 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel\BuildLevelHookEvent 
+00:31:18.984 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel\BuildLevelHookEvent
+00:31:18.984 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent
+00:31:18.984 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:31:18.984 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:31:18.984 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:31:18.984 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:31:18.985 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=f9045160-dc86-440d-a8c2-a63317001450, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.982012100, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:31:18.985 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=BEFORE_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=ec7ff335-8232-4c54-9bd1-f7ed7572e30a, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.982012100, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:31:18.993 [setUp@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@462823d0, response=success: true
+
+00:31:18.994 [setUp@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@3a2b2c36, response=success: true
+
+00:31:18.994 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@1c248f03, response=success: true
+
+00:31:19.007 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492490905
+00:31:19.007 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492489943
+00:31:19.007 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492488981
+00:31:19.025 [setUp@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492489943
+00:31:19.025 [setUp@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492490905
+00:31:19.025 [setUp@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: loaded initial test data to instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.PRE instance=1492488981
+00:31:19.025 [setUp@2] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@b97f70f
+00:31:19.025 [setUp@1] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@1e14ab70
+00:31:19.026 [setUp@0] INFO  c.b.v2.module.WebdriverModule - onBeforeTest: event=com.browserstack.v2.eventBus.Event@261e84ba
+00:31:19.039 [setUp@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@b97f70f, response=success: true
+
+00:31:19.040 [setUp@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@1e14ab70, response=success: true
+
+00:31:19.040 [setUp@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@261e84ba, response=success: true
+
+00:31:19.041 [setUp@1] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@77ebaca4, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@77ebaca4, hookState=HookState.PRE}
+00:31:19.041 [setUp@2] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@3701a5ac, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@3701a5ac, hookState=HookState.PRE}
+00:31:19.041 [setUp@0] INFO  c.b.v2.module.ObservabilityModule - onBeforeTest: event={instance=com.browserstack.v2.instance.TestFrameworkInstance@6354b06a, testFrameworkState=TestFrameworkState.TEST, testInstance=com.browserstack.v2.instance.TestFrameworkInstance@6354b06a, hookState=HookState.PRE}
+00:31:19.041 [setUp@2] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:31:19.041 [setUp@1] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:31:19.043 [setUp@0] INFO  c.b.v2.module.ObservabilityModule - performO11ySync: Performing O11y Sync
+00:31:19.043 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492489943
+00:31:19.043 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492490905
+00:31:19.043 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.PRE instance=1492488981
+00:31:19.043 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492490905
+00:31:19.043 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492489943
+00:31:19.043 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.LOG_REPORT hookState=HookState.POST instance=1492488981
+00:31:19.043 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:31:19.043 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:31:19.043 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: load test results
+00:31:19.045 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492489943
+00:31:19.045 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492490905
+00:31:19.046 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.TEST hookState=HookState.POST instance=1492488981
+00:31:19.046 [test@1] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@951b77d
+00:31:19.046 [test@2] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@7a80b12c
+00:31:19.046 [test@0] INFO  c.b.v2.module.WebdriverModule - onAfterTest: event=com.browserstack.v2.eventBus.Event@6ad94351
+00:31:19.341 [test@2] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:31:19.343 [test@1] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:31:19.345 [test@0] ERROR c.b.utils.SeleniumMethodUtils - Done for sessionid 
+00:31:19.626 [test@2] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@7a80b12c}
+00:31:19.632 [test@1] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@951b77d}
+00:31:19.673 [test@0] INFO  c.b.v2.module.TestHubModule - onAfterTest: event={com.browserstack.v2.eventBus.Event@6ad94351}
+00:31:19.693 [test@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@7a80b12c, response=success: true
+
+00:31:19.694 [test@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@6ad94351, response=success: true
+
+00:31:19.694 [test@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@951b77d, response=success: true
+
+00:31:19.695 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492488981
+00:31:19.695 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492489943
+00:31:19.695 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.PRE instance=1492490905
+00:31:19.695 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:19.695 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:19.695 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:19.722 [test@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}]
+00:31:19.723 [test@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}]
+00:31:19.723 [test@1] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=cc2a60bd-a0c9-4235-b7cd-2336c9b08b70, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3eabe84a]]
+00:31:19.723 [test@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}]
+00:31:19.723 [test@2] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=f9ee777b-ebfe-42cc-aa53-44abdb446cdd, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3f049056]]
+00:31:19.723 [test@0] INFO  c.b.v2.framework.TestNgFramework - Hook Started in PRE key = AFTER_METHOD & hook = {hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=01c41a47-0ff0-4ba4-b2d3-302582309425, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}  and args = [[TestResult name=tearDown status=STARTED method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@acdcf71]]
+00:31:19.724 [test@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=cc2a60bd-a0c9-4235-b7cd-2336c9b08b70, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=ec7ff335-8232-4c54-9bd1-f7ed7572e30a, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.982012100, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:31:19.724 [test@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=f9ee777b-ebfe-42cc-aa53-44abdb446cdd, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=f9045160-dc86-440d-a8c2-a63317001450, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.982012100, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:31:19.724 [test@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.PRE , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=01c41a47-0ff0-4ba4-b2d3-302582309425, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=1bed9f7a-3548-4872-9b5c-d8ed5a82d97c, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.979995300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[]}
+00:31:19.737 [test@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5fd52cd9, response=success: true
+
+00:31:19.738 [test@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5054b6f0, response=success: true
+
+00:31:19.738 [test@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@531d57c7, response=success: true
+
+00:31:19.740 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492488981
+00:31:19.740 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492490905
+00:31:19.740 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: found instance, testFrameworkState=TestFrameworkState.AFTER_METHOD hookState=HookState.POST instance=1492489943
+00:31:19.740 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:19.740 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:19.740 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - trackEvent: track hook events
+00:31:19.755 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}]
+00:31:19.756 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=cc2a60bd-a0c9-4235-b7cd-2336c9b08b70, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3eabe84a] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3eabe84a]]
+00:31:19.756 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel
+00:31:19.756 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:31:19.756 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}]
+00:31:19.757 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel\BuildLevelHookEvent 
+00:31:19.757 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=f9ee777b-ebfe-42cc-aa53-44abdb446cdd, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3f049056] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@3f049056]]
+00:31:19.757 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - args CHECK = [TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}]
+00:31:19.757 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Hook List in Post [{hook_name=tearDown, hook_result=pending, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=01c41a47-0ff0-4ba4-b2d3-302582309425, hook_logs=[], key=AFTER_METHOD, custom_metadata={}, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}] and args = [[TestResult name=tearDown status=FAILURE method=AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@acdcf71] output={null}], AppiumTest.tearDown()[pri:0, instance:com.browserstack.FirstTest@acdcf71]]
+00:31:19.757 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel
+00:31:19.757 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Processing HookLevel attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel
+00:31:19.757 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:31:19.757 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Checking hookLevelFiles: []
+00:31:19.757 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-58\HookLevel\BuildLevelHookEvent
+00:31:19.758 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent 
+00:31:19.758 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - checking Paths of files = C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel\BuildLevelHookEvent and abs path = C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel\BuildLevelHookEvent 
+00:31:19.758 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:31:19.758 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:31:19.758 [tearDown@1] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=ec7ff335-8232-4c54-9bd1-f7ed7572e30a, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.982012100, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=cc2a60bd-a0c9-4235-b7cd-2336c9b08b70, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:19.756690600, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:31:19.758 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-57\HookLevel\BuildLevelHookEvent
+00:31:19.758 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing BuildLevelHookEvent attachments from directory: C:\Users\raj81\.browserstack\UploadedAttachments-59\HookLevel\BuildLevelHookEvent
+00:31:19.758 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:31:19.760 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - Processing TestLevel attachments eventLogs: []
+00:31:19.760 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:31:19.760 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - sendLogCreatedEvent: No Log Events to send
+00:31:19.760 [tearDown@2] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=f9045160-dc86-440d-a8c2-a63317001450, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.982012100, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=f9ee777b-ebfe-42cc-aa53-44abdb446cdd, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:19.757697500, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:31:19.760 [tearDown@0] INFO  c.b.v2.framework.TestNgFramework - trackHookEvents: hook state=AFTER_METHOD.HookState.POST , hooks started={BEFORE_METHOD=[], AFTER_METHOD=[]} , hooks finished={BEFORE_METHOD=[{hook_name=setUp, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:15.780591600, hook_id=1bed9f7a-3548-4872-9b5c-d8ed5a82d97c, hook_logs=[], logs=[], key=BEFORE_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:18.979995300, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}], AFTER_METHOD=[{hook_name=tearDown, hook_result=failed, test_file_path=testng-examples\src\test\java\com\browserstack\FirstTest.java, event_started_at=2025-05-30T00:31:19.723874800, hook_id=01c41a47-0ff0-4ba4-b2d3-302582309425, hook_logs=[], logs=[], key=AFTER_METHOD, custom_metadata={}, event_ended_at=2025-05-30T00:31:19.757697500, test_location=testng-examples\src\test\java\com\browserstack\FirstTest.java}]}
+00:31:19.768 [tearDown@1] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@70f78084, response=success: true
+
+00:31:19.769 [tearDown@0] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@2c05f372, response=success: true
+
+00:31:19.769 [tearDown@2] INFO  c.b.v2.module.TestHubModule - sendTestFrameworkEvent: event=com.browserstack.v2.eventBus.Event@5540cf4d, response=success: true
+
+00:31:20.811 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.811 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.812 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.812 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.812 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.816 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.816 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.817 [main] INFO  com.browserstack.testOps.Listener - logCreated: CLI is active
+00:31:20.900 [Thread-0] INFO  com.browserstack.testOps.Listener - onComplete: CLI is active
+00:31:20.903 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: cli stop triggered
+00:31:26.516 [Thread-0] DEBUG com.browserstack.v2.SdkCLI - stop-bin-session=success: true
+
+00:31:26.526 [Thread-0] INFO  com.browserstack.v2.SdkCLI - stop: shutting down CLI
+00:31:26.834 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:31:26.834 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - BrowserStack Yml Detected : E:\class\maven\MobileTesting\testng-appium-app-browserstack-master\android\testng-examples\browserstack.yml
+00:31:28.486 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - Visit https://observability.browserstack.com/builds/wrzq0eyaalah3tu3h6tou8gl8yhn3ebesvujokmw to view build report, insights, and many more debugging information all at one place!
+00:31:28.487 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:28.487 [Thread-0] INFO  c.browserstack.utils.UtilityMethods - View build on BrowserStack dashboard: 
+00:31:28.487 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
+00:31:28.488 [Thread-0] INFO  c.browserstack.BrowserStackJavaAgent - SDK run ended for id: f5fbb334-d180-4337-aa7d-2a9003c8ee94, testhub id: wrzq0eyaalah3tu3h6tou8gl8yhn3ebesvujokmw
+00:31:28.488 [Thread-0] INFO  c.b.config.BrowserStackConfig - INFO
